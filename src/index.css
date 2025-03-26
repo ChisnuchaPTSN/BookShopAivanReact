@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@100;200;300;400;500;600;700&family=Sriracha&display=swap');
+
+@import "tailwindcss";
+
+* {
+  font-family: "IBM Plex Sans Thai", serif;
+} 
+
+
+@layer base {
+  label {
+    @apply block mb-2 text-gray-500;
+  }
+  
+  input {
+    @apply w-full p-2 mb-3 text-gray-700 border-b-2 border-gray-500 outline-none focus:bg-gray-300;
+  }
+
+}
+
+@layer components {
+  .btn-login {
+    @apply w-full bg-black hover:bg-gray-700 text-white font-bold py-2 px-4 mb-6 rounded-lg;
+  }
+}
